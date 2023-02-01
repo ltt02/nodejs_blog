@@ -4,7 +4,7 @@ const siteRouter = require('./site');
 function route(app) {
     // route
     app.use('/news', newsRouter);
-    
+
     app.use('/', siteRouter);
     // Local host --- Hosting
 
