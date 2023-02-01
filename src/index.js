@@ -26,18 +26,15 @@ app.engine(
         extname: '.hbs',
     }),
 );
-app.set(
-    'view engine',
-    'hbs',
-);
-        app.set('views', path.join(__dirname, 'resource\\views'));
+app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname, 'resource\\views'));
 
 // Home, search, contact -> site.js
 
 // Route init
-route(       app);
+route(app);
 
 // 127.0.0.1 - localhost
-                        app.listen(port, () => {
-                            console.log(`Example app listening on port ${port}`);
-                        });
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`);
+});
